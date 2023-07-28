@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   'inquirer',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage',
+1 verbose cli   'version',
+1 verbose cli   'time' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly mapToRegistry name inquirer
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/inquirer
+8 verbose request uri https://registry.npmjs.org/inquirer
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 2:29:02 PM
+11 verbose request id 4840b8eeed2c809f
+12 verbose etag W/"5b3b190276d38c9e7c0a541e2c7394ac"
+13 verbose lastModified Thu, 13 Jul 2023 15:54:45 GMT
+14 http request GET https://registry.npmjs.org/inquirer
+15 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+16 info attempt registry request try #2 at 2:29:32 PM
+17 verbose etag W/"5b3b190276d38c9e7c0a541e2c7394ac"
+18 verbose lastModified Thu, 13 Jul 2023 15:54:45 GMT
+19 http request GET https://registry.npmjs.org/inquirer
+20 info retry will retry, error on last attempt: Error: read ECONNRESET
+21 info attempt registry request try #3 at 2:31:49 PM
+22 verbose etag W/"5b3b190276d38c9e7c0a541e2c7394ac"
+23 verbose lastModified Thu, 13 Jul 2023 15:54:45 GMT
+24 http request GET https://registry.npmjs.org/inquirer
+25 silly get cb [ 304, undefined ]
+26 verbose etag https://registry.npmjs.org/inquirer from cache
+27 verbose get saving inquirer to /home/jeptoo/.npm/registry.npmjs.org/inquirer/.cache.json
+28 verbose exit [ 0, true ]
+29 verbose stack Error: write EPIPE
+29 verbose stack     at _errnoException (util.js:1022:11)
+29 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:880:14)
+30 verbose cwd /home/jeptoo/Downloads/employee_tracker
+31 error Linux 5.4.0-150-generic
+32 error argv "/usr/bin/node" "/usr/bin/npm" "view" "--json" "inquirer" "description" "dist-tags.latest" "homepage" "version" "time"
+33 error node v8.10.0
+34 error npm  v3.5.2
+35 error code EPIPE
+36 error errno EPIPE
+37 error syscall write
+38 error write EPIPE
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]
